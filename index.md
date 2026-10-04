@@ -3,9 +3,9 @@ Last updated: October 3, 2026
 
 **Draft:** Before publishing, replace the bracketed developer and email fields, complete the children's privacy section, and confirm that this policy matches the version of the app you distribute. Remove this notice when those details are complete.
 
-This policy explains how **[DEVELOPER OR COMPANY NAME]** ("we", "us", or "our") handles information when you use the AngleMate Android app. AngleMate provides bubble level, camera alignment, and screen ruler tools.
+This policy explains how **Slava Bell** ("we", "us", or "our") handles information when you use the AngleMate Android app. AngleMate provides bubble level, camera alignment, and screen ruler tools.
 
-Privacy contact: **[PUBLIC CONTACT EMAIL]**.
+Privacy contact: **sb@iambell.com**.
 
 ## 1. Measurements, sensors, and camera access
 AngleMate uses your device's motion and orientation readings, including accelerometer readings, to calculate angles and display level and alignment information. These readings and the resulting measurements are processed on your device. We do not upload them to our servers or send them to advertising providers. The app does not maintain a persistent measurement history.
@@ -70,15 +70,12 @@ Depending on your location and applicable law, you may have rights to access, co
 
 We cannot retrieve measurement readings or camera previews that the app never sends to us. Requests about data controlled by Google should be directed to Google through its privacy controls or contact channels.
 
-## 10. Children's privacy
-**[CONFIRM CHILD AUDIENCE BEFORE PUBLISHING: If accurate, replace this paragraph with "AngleMate is a general-purpose measurement utility and is not directed to children under 13. If you believe a child has provided personal information to us, contact us so we can investigate and address the request." If the app is intended for children, this section and the advertising configuration require revision.]**
-
-## 11. Changes to this policy
+## 10. Changes to this policy
 We may update this policy as AngleMate's features or data practices change. The latest version will be posted on this page with an updated date. We will provide any additional notice or request consent where applicable requirements call for it.
 
-## 12. Contact
+## 11. Contact
 For questions or requests about this policy, contact:
 
-**[DEVELOPER OR COMPANY NAME]**
+**Slava Bell**
 
 Email: **[PUBLIC CONTACT EMAIL]**
