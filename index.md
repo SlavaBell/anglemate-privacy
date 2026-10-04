@@ -78,4 +78,4 @@ For questions or requests about this policy, contact:
 
 **Slava Bell**
 
-Email: **[PUBLIC CONTACT EMAIL]**
+Email: **sb@iambell.com**
