@@ -1,81 +1,93 @@
 # Privacy Policy for AngleMate
-Last updated: October 3, 2026
+Last updated: October 9, 2026
 
-**Draft:** Before publishing, replace the bracketed developer and email fields, complete the children's privacy section, and confirm that this policy matches the version of the app you distribute. Remove this notice when those details are complete.
+This policy explains how **Slava Bell** ("we", "us", or "our") handles information when you use AngleMate for Android or iOS. AngleMate provides bubble level, camera alignment, and screen ruler tools.
 
-This policy explains how **Slava Bell** ("we", "us", or "our") handles information when you use the AngleMate Android app. AngleMate provides bubble level, camera alignment, and screen ruler tools.
-
-Privacy contact: **sb@iambell.com**.
+Privacy contact: **[sb@iambell.com](mailto:sb@iambell.com)**.
 
 ## 1. Measurements, sensors, and camera access
-AngleMate uses your device's motion and orientation readings, including accelerometer readings, to calculate angles and display level and alignment information. These readings and the resulting measurements are processed on your device. We do not upload them to our servers or send them to advertising providers. The app does not maintain a persistent measurement history.
+AngleMate uses your device's motion and orientation readings, including accelerometer readings, to calculate angles and display level and alignment information. These readings and the resulting measurements are processed on your device. We do not upload them or include them in Analytics or error reports. The app does not maintain a persistent measurement history.
 
-The Laser Level tool requests camera permission to display a live rear-camera preview with an alignment guide. This preview stays on your device. AngleMate does not record, save, or upload photos or video from the preview, and does not send camera images to Google AdMob. Camera access stops when the preview is closed or the app goes into the background.
+The Laser Level tool requests camera permission to display a live rear-camera preview with an alignment guide. The preview stays on your device. AngleMate does not record, save, or upload photos or video from it. Camera access stops when the preview is closed or the app goes into the background.
 
-The flashlight feature uses the device's camera light where available. You can deny or revoke camera permission through Android's app settings; the camera preview will then be unavailable.
+The flashlight feature uses the device's camera light where available. You can deny or revoke camera permission through your device's app settings; the camera preview will then be unavailable.
 
 ## 2. Local settings and accounts
-The app saves preferences such as measurement precision, smoothing, sound, display options, and ruler calibration in local app storage so that they remain available between sessions. AngleMate does not operate a cloud synchronization service for these preferences.
+AngleMate saves preferences such as measurement precision, smoothing, sound, display options, ruler calibration, and your optional-sharing choices in local app storage. The app does not operate a cloud synchronization service for these settings.
 
-Android's backup and device-transfer services may include app settings, depending on your device configuration. These services are controlled by your operating system and account settings.
+Your operating system's backup and device-transfer services may include app settings, depending on your device configuration. These services are controlled by your operating system and account settings.
 
-AngleMate does not require an account and does not ask you to provide your name, email address, or phone number to use its measurement tools. The app does not request access to your contacts, microphone, or precise GPS location.
+AngleMate does not require an account and does not ask for your name, email address, or phone number to use its tools. It does not request access to your contacts, microphone, or precise GPS location.
 
-## 3. Advertising and Google services
-Versions of AngleMate with advertising enabled use Google AdMob and the Google Mobile Ads SDK to display ads. Ad-related processing applies when these services are active.
+## 3. Optional app usage analytics
+**Share app usage**, in **App Settings → Optional sharing**, controls Google Analytics for Firebase. It starts off on a fresh installation. Updates preserve your saved choice, and the tools work while it is off.
 
-Google's advertising SDK can collect and share:
+If you enable this choice, AngleMate sends fixed page names when you open its tools or settings. Google also processes automatic app and session activity, an app-instance identifier, device and app information such as operating-system and app versions, general geography derived from network addresses, and SDK operational diagnostics. We use this information to understand app usage and improve AngleMate.
 
-- IP addresses, which can indicate approximate location.
-- Advertising IDs, app set IDs, and other device or account identifiers where applicable.
-- Device and app information needed for advertising services.
-- Interactions with the app and ads, such as launches, taps, and ad views.
-- Diagnostic and performance information about the app and advertising SDK.
+The receiving service necessarily receives connection information, including your IP address. Google states that Analytics does not log or store IP addresses; it can derive general geography before discarding them. See [Google Analytics data safeguards](https://support.google.com/analytics/answer/6004245).
 
-Google uses this information for ad delivery, measurement and analytics, and fraud prevention. Ad personalization depends on your choices, applicable requirements, and service settings. Choosing non-personalized ads does not necessarily stop all ad-related data processing.
+AngleMate disables advertising-ID collection and keeps advertising consent categories denied. Google signals, user-provided data collection, granular location/device data collection, and ads personalization are disabled in the production Analytics configuration. These restrictions do not remove all device or general-location information from Analytics. Measurements, calibration values, and camera images are not sent.
 
-AngleMate does not include a separate Firebase Analytics or application crash-reporting service. This does not exclude diagnostics and measurement collected by Google's advertising SDK.
+See [Privacy and Security in Firebase](https://firebase.google.com/support/privacy) and [Google's Privacy Policy](https://policies.google.com/privacy). Google Analytics is a separate service with its own terms, even when used through Firebase.
 
-More information is available in [Google's Privacy Policy](https://policies.google.com/privacy) and [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites). Ad-related data collection and sharing are also described in [Google's Mobile Ads SDK data disclosures](https://developers.google.com/admob/android/privacy/play-data-disclosure).
+## 4. Optional error reporting
+**Share error reports**, in **App Settings → Optional sharing**, controls Sentry reporting independently of app usage sharing. It starts off on a fresh installation. Updates preserve your saved choice, and the tools work while it is off.
 
-## 4. Consent and privacy choices
-In supported regions where a consent message is required, AngleMate uses Google's User Messaging Platform (UMP) to present privacy choices. This service manages consent preferences and determines whether advertising requests can proceed.
+If you enable this choice, AngleMate sends technical reports about managed .NET application errors to Sentry. Reports can include exception types, function and module names, stack frames, technical symbol identifiers, app version, and reporting environment. We use these reports to diagnose and fix errors.
 
-When available, open **App Settings → Privacy choices** in AngleMate to review or change your advertising consent choices. The availability of this option depends on regional requirements and Google's consent service.
+The managed reporter removes arbitrary exception messages, user and request details, breadcrumbs, extra data, source directory paths, source snippets, and local-variable values. It does not attach camera images or measurement readings. The production Sentry project is configured to prevent stored IP addresses and scrub geography. Sentry still receives the network connection information needed to receive a report.
 
-You can also manage advertising ID controls in Android settings and review [Google's ad personalization controls](https://myadcenter.google.com/). Your available options vary by Android version and device. Withdrawing consent affects future processing that depends on that consent; it does not automatically delete information already held by Google.
+This release does not capture native crashes, session replays, logs, performance traces, or profiles. Fatal managed error delivery is best effort: a report may not arrive if the process terminates before sending finishes. Managed reports are not intentionally persisted to disk by AngleMate's reporter.
 
-## 5. Information you provide when contacting us
-If you contact us by email, we receive your email address, the content of your message, and any information or attachments you choose to provide. We use that information to answer your question, provide support, and handle privacy requests. Avoid sending camera images or other sensitive information unless it is necessary for your request.
+See [Sentry's Privacy Policy](https://sentry.io/privacy/).
 
-## 6. Sharing and service providers
-Ad-related information is processed by Google and, where applicable, advertising providers involved in delivering or measuring ads. Google's consent message identifies the advertising providers applicable to the choices shown there. Their processing is subject to the relevant provider's policies and your applicable privacy choices.
+## 5. Changing your sharing choices
+You can change either sharing choice at any time in **App Settings → Optional sharing**. Keeping both off does not limit the measurement tools.
 
-Support communications are processed through the email services used to receive and respond to them. Information may also be disclosed when necessary to comply with applicable law or protect legal rights. We do not send your measurement readings or camera previews to these providers.
+Turning usage sharing off disables collection and requests a reset of local Analytics data and its app-instance identifier. Turning error sharing off stops new app-managed reports and cancels pending managed sends. Information already received by a provider is not deleted by these switches. A request already sent cannot be recalled by turning sharing off.
 
-## 7. Retention and deletion
-Live measurement data and camera previews are used during operation and are not saved as a measurement history or recording by AngleMate. Preferences remain in local app storage until they are changed, app storage is cleared, or the app is removed. Android backups or device transfers may retain or restore settings separately.
+For requests about provider-held data, see sections 9 and 10.
 
-To remove local app data, use **Android Settings → Apps → AngleMate → Storage → Clear storage**, or the equivalent controls on your device. Clearing app storage does not delete data that Google or another provider has already received.
+## 6. Advertising and payments
+This release does not request advertising banners, start advertising consent collection, or process purchases. The Ad Free preview does not charge you or create a paid entitlement. We will review this policy and the store disclosures before introducing advertising or payments in a future release.
 
-We retain support communications only for as long as reasonably necessary to address the inquiry and meet applicable legal obligations. Contact us to request deletion of information you have sent us. Google controls the retention and deletion of information it processes under its policies; use Google's privacy controls or contact Google for requests relating to that information.
+## 7. Information you provide when contacting us
+If you contact **sb@iambell.com**, we receive your email address, message, and any information or attachments you choose to provide. We use them to respond, provide support, and handle privacy requests. Avoid sending sensitive information unless it is needed for your request.
 
-## 8. Security and international processing
-AngleMate uses the operating system's app storage and permission controls for local information. Google states that data collected by its Mobile Ads SDK is encrypted in transit using Transport Layer Security (TLS). No storage or transmission method can guarantee absolute security.
+## 8. Service providers and international processing
+When you enable the corresponding sharing choice, Google processes usage information through Firebase Analytics, and Sentry processes error reports. Support communications are handled through the email services used to receive and answer them. We do not send measurement readings or camera previews to these providers.
 
-Google and other service providers may process information in countries other than your country of residence. Google's policies describe its international processing and applicable transfer safeguards.
+We do not sell your personal information or use optional telemetry for cross-app advertising or ad personalization. Information may be disclosed when necessary to comply with applicable law or protect legal rights.
 
-## 9. Your privacy rights
-Depending on your location and applicable law, you may have rights to access, correct, delete, or obtain a copy of personal information, object to or restrict certain processing, withdraw consent, or complain to a data protection authority. Contact us using the email below for requests about information we hold. We may need enough information to verify and respond to your request.
+Google, Sentry, and their service providers may process information in countries other than your country of residence. The production Sentry organization uses its **United States** event-data region. Google Analytics processing is not restricted to a Firebase database or storage region. Google's information explains its [international data transfers](https://business.safety.google/adsdatatransfers/) and [Firebase processing locations](https://firebase.google.com/support/privacy).
 
-We cannot retrieve measurement readings or camera previews that the app never sends to us. Requests about data controlled by Google should be directed to Google through its privacy controls or contact channels.
+## 9. Retention and deletion
+Live measurements and camera previews are used during operation and are not saved as a measurement history or recording. Local preferences remain until changed, app storage is cleared, or the app is removed. Backups or device transfers may retain or restore settings separately.
 
-## 10. Changes to this policy
+On Android, you can remove local app data through **Settings → Apps → AngleMate → Storage → Clear storage**, or equivalent device controls. On iOS, deleting the app removes its app container; offloading retains its documents and data. Removing local data does not delete information already received by Google, Sentry, or an email service.
+
+The production Analytics property is configured for **2 months** of user/event data retention, with reset on new activity off. This setting does not apply to standard aggregated reports. There are no configured Google Ads or BigQuery links in the reviewed production property. See [Google Analytics data retention](https://support.google.com/analytics/answer/7667196).
+
+Our Sentry organization currently uses a free Business trial, followed by an automatic transition to the free Developer plan. Error events received during the trial retain their **90-day** retention period after the transition. New error events received after the transition have **30-day** retention. Switching plans does not shorten the retention of earlier trial events. These periods were confirmed by Sentry Support for our organization. See [Sentry's trial-expiry explanation](https://www.sentry.help/en/articles/13965075-what-happens-when-my-trial-expires).
+
+We retain support communications for as long as reasonably necessary to address the inquiry and meet applicable legal obligations. Contact us to request deletion of information you provided or to ask about optional Analytics/error-reporting data.
+
+Where an Analytics installation can be identified, Google offers user-data deletion. This does not remove standard aggregated reports, and provider processing is not immediate. Sentry groups events into issues; deleting an issue can affect several reports, so we must check its scope before acting. Neither operation establishes immediate erasure from every provider backup. Information independently controlled by a provider is also subject to that provider's privacy controls and policies.
+
+## 10. Your privacy rights and identification limits
+Depending on your location and applicable law, you may have rights to access, correct, delete, or obtain a copy of personal information, object to or restrict processing, withdraw consent, or complain to a data protection authority. Contact **[sb@iambell.com](mailto:sb@iambell.com)** about information we hold. We may need enough information to verify and respond to your request.
+
+We cannot retrieve measurement readings or camera previews that the app never sends to us. Analytics and error reports do not contain an AngleMate account name or your email address, so an email address alone does not identify those records. The app does not currently offer an installation-ID or event-ID export feature. Resetting Analytics data can remove the identifier needed to associate earlier records with your installation.
+
+We will assess whether we can locate the relevant records and explain any identification limits. We do not assume that a report belongs to you solely because its time, app version, or location appears to match. Turning sharing off does not itself delete provider-held data.
+
+## 11. Security
+AngleMate uses operating-system app storage and permission controls for local information. Optional Analytics uses encrypted transport, and the app accepts only HTTPS Sentry endpoints. No storage or transmission method can guarantee absolute security.
+
+## 12. Children's privacy
+AngleMate is a general-purpose measurement utility and is not directed to children under 13. If you believe a child has provided personal information to us, contact **[sb@iambell.com](mailto:sb@iambell.com)** so we can investigate and address the request.
+
+## 13. Changes and contact
 We may update this policy as AngleMate's features or data practices change. The latest version will be posted on this page with an updated date. We will provide any additional notice or request consent where applicable requirements call for it.
 
-## 11. Contact
-For questions or requests about this policy, contact:
-
-**Slava Bell**
-
-Email: **sb@iambell.com**
+For questions or privacy requests, contact **Slava Bell** at **[sb@iambell.com](mailto:sb@iambell.com)**.
